@@ -1,5 +1,5 @@
 import type { ObjectId } from "mongodb";
-import { getDb } from "~/lib/db.server";
+import { getDb } from "../lib/db.server";
 import bcrypt from "bcryptjs";
 
 export interface User {
