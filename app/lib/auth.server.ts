@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { redirect } from "@remix-run/node";
-import { getUserById } from "~/models/user.server";
-import type { UserPublic } from "~/models/user.server";
+import { getUserById } from "../models/user.server";
+import type { UserPublic } from "../models/user.server";
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key-change-in-production";
 const JWT_EXPIRES_IN = "7d";
